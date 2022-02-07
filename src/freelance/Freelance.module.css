@@ -1,0 +1,22 @@
+.mainBlock {
+    min-height: 30vh;
+    background-color: #ffd4f0;
+}
+
+.freelanceContainer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.button {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #f7f7f7;
+}

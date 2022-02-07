@@ -1,0 +1,35 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #f1afbb;
+}
+
+.contactContainer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.form {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #a7e7a7;
+}
+
+.textarea {
+    height: 200px;
+}
+
+.button {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: #f7f7f7;
+}
