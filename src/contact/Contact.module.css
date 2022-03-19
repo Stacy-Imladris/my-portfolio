@@ -1,35 +1,35 @@
 .mainBlock {
-    height: 100vh;
     background-color: #f1afbb;
 }
 
 .contactContainer {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .text {
     background-color: #f7f7f7;
-    text-align: center;
 }
 
 .form {
-    width: 280px;
-    height: 300px;
+    width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     background-color: #a7e7a7;
 }
 
-.textarea {
-    height: 200px;
+.form input, .form textarea {
+    width: 100%;
 }
 
 .button {
-    width: 150px;
-    height: 45px;
-    text-align: center;
-    padding-top: 15px;
+    padding: 10px 20px;
     background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 635px) {
+    .form {
+        width: 100%;
+    }
 }

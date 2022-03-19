@@ -1,33 +1,31 @@
 .mainBlock {
-    min-height: 30vh;
     background-color: #ffd4f0;
 }
 
 .footerContainer {
-    min-height: 300px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .text {
     background-color: #f7f7f7;
-    text-align: center;
 }
 
 .links {
-    height: 100px;
-    border: 1px solid;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #dac5ee;
 }
 
 .link {
-    width: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: darkgrey;
 }
 
 .copyright {
-    text-align: center;
-    background-color: #f7f7f7;
+
 }

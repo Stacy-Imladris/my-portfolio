@@ -7,7 +7,7 @@ export const Freelance = () => {
         <div className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.freelanceContainer}`}>
                 <h2 className={style.text}>I Am Available For Freelancer</h2>
-                <div className={style.button}>HIRE ME</div>
+                <a href='' className={style.button}>HIRE ME</a>
             </div>
         </div>
     );

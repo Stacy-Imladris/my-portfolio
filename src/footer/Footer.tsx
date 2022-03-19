@@ -8,11 +8,12 @@ export const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.text}>Stacy Imladris</h2>
                 <div className={style.links}>
-                    <a href="" className={style.link}>Facebook</a>
-                    <a href="" className={style.link}>Linkedin</a>
-                    <a href="" className={style.link}>Instagram</a>
+                    <a href="" className={style.link}>FB</a>
+                    <a href="" className={style.link}>LI</a>
+                    <a href="" className={style.link}>Inst</a>
+                    <a href="" className={style.link}>GH</a>
                 </div>
-                <div className={style.copyright}>© 2022, All Rights Reserved.</div>
+                <span className={style.copyright}>© 2022, All Rights Reserved.</span>
             </div>
         </div>
     );

@@ -8,10 +8,6 @@
     justify-content: flex-start;
 }
 
-.title {
-    background-color: #eeeef5;
-}
-
 .skills {
     border: 1px solid;
     width: 100%;
@@ -19,4 +15,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 771px) {
+    .skills {
+        justify-content: center;
+    }
 }
