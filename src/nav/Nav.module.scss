@@ -1,0 +1,16 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.nav {
+    border: 1px solid;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    & a {
+        margin: 5px 10px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        @include text($textFontFamily, 16px, 1.8, $textColor);
+    }
+}

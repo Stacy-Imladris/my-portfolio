@@ -1,0 +1,42 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.mainBlock {
+  padding: 100px 0;
+  background-color: $bgColor;
+
+  .contactContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .form {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+
+      & input, & textarea {
+        width: 100%;
+        background: $bgSecondColor;
+        border: 1px solid #4a4a4a;
+        padding: 0 15px;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-weight: 400;
+        margin-bottom: 1rem;
+        @include text($textFontFamily, 12px, 1.5, $textColor);
+      }
+
+      .area {
+        padding: 15px;
+        min-height: 100px;
+        overflow: auto;
+        resize: vertical;
+      }
+
+      @media screen and (max-width: 690px) {
+        width: 90%;
+      }
+    }
+  }
+}

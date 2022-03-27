@@ -1,0 +1,40 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.mainBlock {
+    background-color: $bgSecondColor;
+    padding: 40px 0;
+    .footerContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        .text {
+            letter-spacing: 3px;
+            font-weight: 700;
+            display: block;
+            margin: 0 0 30px;
+            @include text($titleFontFamily, 24px, 1.2, $textColor);
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+            .link {
+                margin: 5px 10px;
+                font-weight: 400;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                @include text($textFontFamily, 14px, 1.8, $textColor);
+            }
+        }
+        .copyright {
+            font-weight: 400;
+            margin: 0;
+            @include text($textFontFamily, 14px, 1.8, $thirdColor);
+        }
+    }
+}

@@ -36,12 +36,12 @@
     .projectInfo {
         padding: 25px 20px;
         .title {
-            @include text($titleFontFamily, 18px, 1.2);
+            @include text($titleFontFamily, 18px, 1.2, $textColor);
             letter-spacing: 1px;
             margin: 0 0 5px;
         }
         .description {
-            @include text($textFontFamily, 14px, 1.8);
+            @include text($textFontFamily, 14px, 1.8, $textColor);
             font-weight: 400;
         }
     }

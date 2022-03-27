@@ -1,0 +1,13 @@
+@import "../common/styles/sass/variables";
+
+.mainBlock {
+    padding: 100px 0;
+    background-color: $bgSecondColor;
+    .freelanceContainer {
+        flex-direction: column;
+        justify-content: center;
+        .button {
+            margin-top: 30px;
+        }
+    }
+}

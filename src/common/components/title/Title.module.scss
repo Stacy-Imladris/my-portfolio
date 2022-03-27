@@ -5,9 +5,10 @@
     font-family: 'Josefin Sans', sans-serif;
     color: $textColor;
     text-transform: capitalize;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.2;
     letter-spacing: 5px;
+    text-align: center;
     position: relative;
     &::before {
         content: '';
