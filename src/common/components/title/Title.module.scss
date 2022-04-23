@@ -1,12 +1,11 @@
 @import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
 
 .title {
     margin: 0 0 30px;
-    font-family: 'Josefin Sans', sans-serif;
+    @include text($titleFontFamily, 26px, 1.2, 300);
     color: $textColor;
     text-transform: capitalize;
-    font-size: 26px;
-    line-height: 1.2;
     letter-spacing: 5px;
     text-align: center;
     position: relative;

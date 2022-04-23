@@ -14,8 +14,9 @@
     transition: all 0.4s ease-in-out 0s;
     width: 100%;
     border: none;
+    color: $textColor;
     @include text($textFontFamily, 14px, 1.2, $textColor);
-    &:after {
+    &::after {
         content: "";
         position: absolute;
         left: 0;

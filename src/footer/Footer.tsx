@@ -1,18 +1,25 @@
-import React from 'react';
 import style from './Footer.module.scss';
-import styleContainer from '../common/styles/Container.module.scss';
+import {Title} from '../common/components/title/Title';
 
 export const Footer = () => {
     return (
         <div className={style.mainBlock}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.text}>Stacy Imladris</h2>
-                <ul className={style.links}>
-                    <li><a href="" className={style.link}>Linkedin</a></li>
-                    <li><a href="" className={style.link}>Github</a></li>
-                    <li><a href="" className={style.link}>Codewars</a></li>
-                    <li><a href="" className={style.link}>Telegram</a></li>
-                </ul>
+            <div className={style.footerContainer}>
+                <Title text={'Stacy Imladris'}/>
+                <div className={style.icons}>
+                    <div className={style.icon}>
+                        <a href=""><img src={'linkedin'} alt={'Linkedin'}/>Linkedin</a>
+                    </div>
+                    <div className={style.icon}>
+                        <a href=""><img src={'github'} alt={'Github'}/>Github</a>
+                    </div>
+                    <div className={style.icon}>
+                        <a href=""><img src={'codewars'} alt={'Codewars'}/>Codewars</a>
+                    </div>
+                    <div className={style.icon}>
+                        <a href=""><img src={'telegram'} alt={'Telegram'}/>Telegram</a>
+                    </div>
+                </div>
                 <span className={style.copyright}>© 2022, All Rights Reserved.</span>
             </div>
         </div>
