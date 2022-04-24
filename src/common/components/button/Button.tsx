@@ -5,6 +5,6 @@ type ButtonPropsType = {
     url: string
 }
 
-export const Button = ({text, url}: ButtonPropsType) => {
-    return <a href={url} className={s.btn}>{text}</a>
-}
+export const Button = ({text, url}: ButtonPropsType) => (
+    <a href={url} className={s.btn}>{text}</a>
+)

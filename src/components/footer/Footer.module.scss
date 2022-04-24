@@ -1,0 +1,56 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.mainBlock {
+  min-height: 300px;
+  @include flex(row, center, stretch, nowrap);
+
+  .footerContainer {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+    padding: 50px 0;
+
+    .icons {
+      @include flex(row, space-between, center, nowrap);
+      width: 400px;
+      margin-top: 30px;
+
+      @media screen and (max-width: 505px) {
+        width: 100%;
+      }
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        border: 1px solid $thirdColor;
+        border-radius: 50%;
+
+        &:hover {
+          border: 1px solid $textColor;
+          transition: all 0.3s ease-in-out 0s;
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          @include flex(row, center, center, nowrap);
+
+          img {
+            width: 60%;
+          }
+        }
+
+        @media screen and (max-width: 380px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 40px;
+      @include text($textFontFamily, 14px, 1.8, 300);
+      opacity: 0.5;
+    }
+  }
+}

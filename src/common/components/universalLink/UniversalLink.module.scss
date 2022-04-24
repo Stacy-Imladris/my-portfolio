@@ -1,0 +1,16 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+a {
+  cursor: pointer;
+  @include text($textFontFamily, 16px, 1.8, 400);
+
+  &:hover {
+    text-decoration: none;
+    color: $primaryColor;
+  }
+}
+
+.active {
+  color: $primaryColor;
+}

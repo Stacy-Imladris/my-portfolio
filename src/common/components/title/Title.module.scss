@@ -2,25 +2,27 @@
 @import "../../styles/sass/mixins";
 
 .title {
-    margin: 0 0 30px;
-    @include text($titleFontFamily, 26px, 1.2, 300);
-    color: $textColor;
-    text-transform: capitalize;
-    letter-spacing: 5px;
-    text-align: center;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 55px;
-        height: 1px;
-        background: $primaryColor;
-        bottom: -30px;
-        left: 50%;
-        transform: translate(-50%, 50%);
-    }
-    & h2 {
-        margin: 0;
-        font-weight: 400;
-    }
+  margin: 0 0 30px;
+  @include text($titleFontFamily, 26px, 1.2, 300);
+  color: $textColor;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 1px;
+    background: $primaryColor;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  & h2 {
+    margin: 0;
+    font-weight: 400;
+  }
 }

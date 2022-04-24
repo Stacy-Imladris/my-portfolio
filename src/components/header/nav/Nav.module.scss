@@ -1,0 +1,10 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.nav {
+  width: 350px;
+  @include flex(row, space-around, stretch, nowrap);
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+}
