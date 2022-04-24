@@ -4,7 +4,6 @@
 
 .mainBlock {
   padding: 100px 0;
-  background-color: $bgColor;
 
   .contactContainer {
     @include container();
@@ -53,10 +52,7 @@
       }
 
       button[type="submit"] {
-        @extend .button;
-        align-self: center;
-        background-color: transparent;
-        margin-top: 30px;
+        @extend .btn;
       }
 
       @media screen and (max-width: 690px) {

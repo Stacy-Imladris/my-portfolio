@@ -1,13 +1,13 @@
 @import "../common/styles/sass/variables";
+@import "../common/components/button/Button.module";
 
 .mainBlock {
     padding: 100px 0;
-    background-color: $bgSecondColor;
     .freelanceContainer {
-        flex-direction: column;
-        justify-content: center;
+        @include container();
+        @include flex(column, center, center, nowrap);
         .button {
-            margin-top: 30px;
+            @extend .btn;
         }
     }
 }

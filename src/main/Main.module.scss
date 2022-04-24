@@ -2,77 +2,87 @@
 @import "../common/styles/sass/mixins";
 
 .mainBlock {
-  background-color: $bgColor;
-  @include flex(row, center, center, nowrap);
-  padding: 180px 0;
-  .mainContainer {
-    @include container();
-    @include flex(row, space-around, center, wrap);
+  padding: 220px 0;
 
-    @media screen and (max-width: 1230px) {
-      flex-direction: column;
-    }
-    .text {
-      @include flex(column, flex-start, flex-start, nowrap);
-      color: $textColor;
-      span {
-        font-size: 16px;
-        &:nth-child(2) {
-          @include text($titleFontFamily, 44px, 1.2, 700);
-          letter-spacing: 5px;
-          margin: 10px 0;
-          span {
+  .fade {
+    @include flex(row, center, center, nowrap);
+
+    .mainContainer {
+      @include container();
+      @include flex(row, space-around, center, wrap);
+      @media screen and (max-width: 1230px) {
+        flex-direction: column;
+      }
+
+      .text {
+        @include flex(column, flex-start, flex-start, nowrap);
+        color: $textColor;
+
+        span {
+          font-size: 16px;
+
+          &:nth-child(2) {
             @include text($titleFontFamily, 44px, 1.2, 700);
             letter-spacing: 5px;
-            position: relative;
-            z-index: 0;
-            display: inline-block;
-            &:before {
-              content: "";
-              position: absolute;
-              width: 100%;
-              height: 20px;
-              background-color: $primaryColor;
-              bottom: 0;
-              z-index: -1;
+            margin: 20px 0 10px 0;
+
+            span {
+              @include text($titleFontFamily, 44px, 1.2, 700);
+              letter-spacing: 5px;
+              position: relative;
+              z-index: 0;
+              display: inline-block;
+
+              &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 20px;
+                background-color: $primaryColor;
+                bottom: 0;
+                z-index: -1;
+              }
             }
           }
+          &:nth-child(3) {
+            @include text($textFontFamily, 28px, 1.8, 400);
+            margin: 0;
+          }
         }
-      }
-      h1 {
-        @include text($textFontFamily, 28px, 1.8, 400);
-        margin: 0;
-      }
-      @media screen and (max-width: 100px) {
-        align-items: center;
-      }
-    }
 
-    .photo {
-      position: relative;
-      z-index: 1;
 
-      .image {
-        @include bgSettings();
-        vertical-align: middle;
-        width: 300px;
-        height: 400px;
-        background-image: url('../assets/images/photo.jpg');
-        background-position: 80% 0;
-        &:before {
-          content: "";
-          position: absolute;
-          height: 110%;
-          width: 100%;
-          border: 5px solid $primaryColor;
-          left: 15px;
-          top: -15px;
-          z-index: -1;
+        @media screen and (max-width: 100px) {
+          align-items: center;
         }
       }
 
-      @media screen and (max-width: 1230px) {
-        margin-top: 50px;
+      .photo {
+        position: relative;
+        z-index: 1;
+
+        .image {
+          @include bgSettings();
+          vertical-align: middle;
+          width: 300px;
+          height: 400px;
+          background-image: url('../assets/images/photo.jpg');
+          background-position: 80% 0;
+
+          &:before {
+            content: "";
+            position: absolute;
+            height: 110%;
+            width: 100%;
+            border: 5px solid $primaryColor;
+            left: 15px;
+            top: -15px;
+            z-index: -1;
+          }
+        }
+
+        @media screen and (max-width: 1230px) {
+          margin-top: 50px;
+        }
       }
     }
   }

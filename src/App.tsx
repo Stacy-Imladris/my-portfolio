@@ -1,22 +1,21 @@
-import React from 'react';
-import './App.css';
 import {Header} from "./header/Header";
-import {Main} from "./main/Main";
+import {Main} from './main/Main';
 import {Skills} from "./skills/Skills";
 import {Projects} from "./projects/Projects";
 import {Freelance} from "./freelance/Freelance";
-import {Contact} from "./contact/Contact";
+import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
+import s from './App.module.scss';
 
 function App() {
     return (
-        <div className="App">
+        <div className={s.app}>
             <Header/>
             <Main/>
             <Skills/>
             <Projects/>
             <Freelance/>
-            <Contact/>
+            <Contacts/>
             <Footer/>
         </div>
     );

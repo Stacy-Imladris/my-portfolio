@@ -3,7 +3,6 @@
 
 .mainBlock {
     min-height: 300px;
-    background-color: $bgSecondColor;
     @include flex(row, center, stretch, nowrap);
 
     .footerContainer {

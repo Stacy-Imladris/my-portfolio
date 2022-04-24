@@ -1,7 +1,7 @@
 @import "../../styles/sass/variables";
 @import "../../styles/sass/mixins";
 
-.button {
+.btn {
   border: none;
   @include flex(row, center, center, nowrap);
   @include text($textFontFamily, 14px, 1.2, 400);
@@ -13,6 +13,10 @@
   outline: none;
   position: relative;
   z-index: 0;
+  text-decoration: none;
+  align-self: center;
+  background-color: transparent;
+  margin-top: 30px;
   &::after {
     content: '';
     position: absolute;
