@@ -27,6 +27,12 @@
       transform: translate(50%, 50%) rotate(-45deg);
       @include bgSettings();
     }
+    &:hover {
+      background: $primaryColor;
+      box-shadow: 0 0 13px 1px #6ba9f5;
+      transform: rotate(405deg);
+      transition: all .5s ease-in-out 0s;
+    }
   }
 
   .title {

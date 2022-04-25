@@ -25,11 +25,25 @@
         border: 1px solid $thirdColor;
         border-radius: 50%;
         color: $textColor;
-        @include bgSettings();
+        background-color: $primaryColor;
+        @include flex(row, center, center, nowrap);
+
+        .img {
+          width: 60%;
+          height: 60%;
+
+          &:hover {
+            transform: rotate(360deg);
+            transition: all 0.6s ease-in-out 0s;
+          }
+        }
 
         &:hover {
           border: 1px solid $textColor;
-          transition: all 0.3s ease-in-out 0s;
+          background-color: #6ba9f5;
+          box-shadow: 0 0 13px 1px #6ba9f5;
+          transform: scale(1.2);
+          transition: all .1s ease-in-out 0s;
         }
 
         @media screen and (max-width: 500px) {
