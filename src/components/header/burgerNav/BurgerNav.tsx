@@ -9,15 +9,19 @@ export const BurgerNav = () => {
         setIsOpenMenu(!isOpenMenu)
     }
 
+    const hideMenu = () => {
+        setIsOpenMenu(false)
+    }
+
     const burgerNavItemsStyle = `${s.burgerNavItems} ${isOpenMenu ? s.isShow : ''}`
 
     return (
         <div className={s.burgerNav}>
             <div className={burgerNavItemsStyle}>
-                <UniversalLink anchor={'main'} offset={-70} text={'Main'}/>
-                <UniversalLink anchor={'skills'} offset={-50} text={'Skills'}/>
-                <UniversalLink anchor={'projects'} offset={-50} text={'Projects'}/>
-                <UniversalLink anchor={'contacts'} offset={-70} text={'Contacts'}/>
+                <UniversalLink anchor={'main'} offset={-70} text={'Main'} onClickHandle={hideMenu}/>
+                <UniversalLink anchor={'skills'} offset={-50} text={'Skills'} onClickHandle={hideMenu}/>
+                <UniversalLink anchor={'projects'} offset={-50} text={'Projects'} onClickHandle={hideMenu}/>
+                <UniversalLink anchor={'contacts'} offset={-70} text={'Contacts'} onClickHandle={hideMenu}/>
             </div>
             <div className={s.burgerButton} onClick={openMenu}>
                 <div className={isOpenMenu ? s.open : ''}/>
