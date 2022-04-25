@@ -10,7 +10,7 @@ export const Footer = () => (
     <div className={s.mainBlock}>
         <Fade delay={150}>
             <div className={s.footerContainer}>
-                <Title text={'Stacy Imladris'}/>
+                <Title text={'Stacy Belikova'}/>
                 <div className={s.icons}>
                     <a href="https://www.linkedin.com/in/anastasiya-belikova-9687b8234/"
                        className={s.icon} target='_blank'>

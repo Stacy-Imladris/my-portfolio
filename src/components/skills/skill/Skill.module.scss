@@ -43,9 +43,4 @@
     margin-block-end: 1em;
     @include text($titleFontFamily, 18px, 1.2, $textColor);
   }
-
-  .description {
-    font-weight: 400;
-    @include text($textFontFamily, 16px, 1.8, $textColor);
-  }
 }

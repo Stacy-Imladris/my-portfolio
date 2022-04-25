@@ -12,7 +12,7 @@
 
     .icons {
       @include flex(row, space-between, center, nowrap);
-      width: 400px;
+      width: 420px;
       margin-top: 30px;
 
       @media screen and (max-width: 505px) {

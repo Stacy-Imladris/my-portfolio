@@ -19,24 +19,15 @@ export const Skills = () => {
                 <div className={s.skillsContainer}>
                     <Title text="Skills"/>
                     <div className={s.skills}>
-                        <Skill title={'REACT'} imgUrl={`url(${react})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'REDUX'} imgUrl={`url(${redux})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'TYPESCRIPT'} imgUrl={`url(${js})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'JAVASCRIPT'} imgUrl={`url(${ts})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'REST API'} imgUrl={`url(${restAPI})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'GIT'} imgUrl={`url(${git})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'HTML'} imgUrl={`url(${html})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'CSS'} imgUrl={`url(${css})`}
-                               description={'description of my skill'}/>
-                        <Skill title={'SASS/SCSS'} imgUrl={`url(${sass})`}
-                               description={'description of my skill'}/>
+                        <Skill title={'REACT'} imgUrl={`url(${react})`}/>
+                        <Skill title={'REDUX'} imgUrl={`url(${redux})`}/>
+                        <Skill title={'TYPESCRIPT'} imgUrl={`url(${js})`}/>
+                        <Skill title={'JAVASCRIPT'} imgUrl={`url(${ts})`}/>
+                        <Skill title={'REST API'} imgUrl={`url(${restAPI})`}/>
+                        <Skill title={'GIT'} imgUrl={`url(${git})`}/>
+                        <Skill title={'HTML'} imgUrl={`url(${html})`}/>
+                        <Skill title={'CSS'} imgUrl={`url(${css})`}/>
+                        <Skill title={'SASS/SCSS'} imgUrl={`url(${sass})`}/>
                     </div>
                 </div>
             </Fade>
