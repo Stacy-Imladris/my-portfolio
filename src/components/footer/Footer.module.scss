@@ -24,23 +24,15 @@
         height: 60px;
         border: 1px solid $thirdColor;
         border-radius: 50%;
+        color: $textColor;
+        @include bgSettings();
 
         &:hover {
           border: 1px solid $textColor;
           transition: all 0.3s ease-in-out 0s;
         }
 
-        a {
-          width: 100%;
-          height: 100%;
-          @include flex(row, center, center, nowrap);
-
-          img {
-            width: 60%;
-          }
-        }
-
-        @media screen and (max-width: 380px) {
+        @media screen and (max-width: 500px) {
           width: 50px;
           height: 50px;
         }

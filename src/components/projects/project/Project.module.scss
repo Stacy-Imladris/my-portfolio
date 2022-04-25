@@ -9,10 +9,8 @@
 
   .image {
     height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
+    @include bgSettings();
     @include flex(row, center, center, nowrap);
 
     &::before {

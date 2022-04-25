@@ -8,7 +8,7 @@
   padding: 40px 15px;
   max-width: 320px;
   margin: 0 auto;
-  @include flex(column, center, center, nowrap);
+  @include flex(column, flex-start, center, nowrap);
 
   .icon {
     height: 80px;
@@ -16,6 +16,17 @@
     background: rgba(255, 255, 255, 0.1);
     transform: rotate(45deg);
     margin: 0 auto 30px;
+    position: relative;
+
+    .img {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 50%) rotate(-45deg);
+      @include bgSettings();
+    }
   }
 
   .title {

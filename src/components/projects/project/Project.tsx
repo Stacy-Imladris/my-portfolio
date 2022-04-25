@@ -1,18 +1,17 @@
 import s from './Project.module.scss';
-import {ImageStyleType} from '../Projects';
 import {Fade} from 'react-awesome-reveal';
 import {Button} from '../../../common/components/button/Button';
 
 type ProjectPropsType = {
     title: string
     description: string
-    style: ImageStyleType
+    imgUrl: string
 }
 
-export const Project = ({title, description, style}: ProjectPropsType) => (
+export const Project = ({title, description, imgUrl}: ProjectPropsType) => (
     <div className={s.project}>
         <Fade>
-            <div className={s.image} style={style}>
+            <div className={s.image} style={{backgroundImage: imgUrl}}>
                 <Button text={'Open'} url={''}/>
             </div>
             <div className={s.projectInfo}>
