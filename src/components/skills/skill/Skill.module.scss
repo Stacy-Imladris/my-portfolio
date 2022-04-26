@@ -6,7 +6,7 @@
   box-sizing: border-box;
   min-width: 27%;
   padding: 40px 15px;
-  max-width: 320px;
+  width: 230px;
   margin: 0 auto;
   @include flex(column, flex-start, center, nowrap);
 
