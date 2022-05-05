@@ -13,9 +13,7 @@ export const Project = ({title, description, imgUrl, projectUrl}: ProjectPropsTy
     <div className={s.project}>
         <Fade>
             <div className={s.image} style={{backgroundImage: imgUrl}}>
-                <div className={s.button}>
-                    <Button text={'Open'} url={projectUrl}/>
-                </div>
+                <Button text={'Open'} url={projectUrl}/>
             </div>
             <div className={s.projectInfo}>
                 <h3 className={s.title}>{title}</h3>
