@@ -28,7 +28,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 0.5;
+      opacity: 0.7;
     }
 
     .open {
@@ -38,6 +38,12 @@
       z-index: 1;
       color: $textColor;
       text-decoration: none;
+    }
+
+    .button {
+      padding-bottom: 25px;
+      width: 45%;
+      background-color: hotpink;
     }
   }
 

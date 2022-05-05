@@ -27,6 +27,11 @@
     bottom: 0;
     z-index: -1;
     transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 400px) {
+      width: 100%;
+      height: 110%;
+    }
   }
 
   &:hover {
