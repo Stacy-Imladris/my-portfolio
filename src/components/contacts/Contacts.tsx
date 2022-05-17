@@ -11,7 +11,7 @@ export const Contacts = () => {
 
     const onSubmitSendMessage = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        axios.post('https://form-for-portfolio.herokuapp.com/sendMessage', {
+        axios.post('https://nodejs-smtp-form.herokuapp.com/sendMessage', {
             name: nameRef.current?.value,
             email: emailRef.current?.value,
             message: messageRef.current?.value
