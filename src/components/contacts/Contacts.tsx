@@ -11,11 +11,21 @@ export const Contacts = () => {
 
     const onSubmitSendMessage = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        axios.post('https://nodejs-smtp-form.herokuapp.com/sendMessage', {
-            name: nameRef.current?.value,
-            email: emailRef.current?.value,
-            message: messageRef.current?.value
-        })
+        if (nameRef && nameRef.current && nameRef.current.value &&
+            emailRef && emailRef.current && emailRef.current.value
+            && messageRef && messageRef.current && messageRef.current.value) {
+            axios.post('https://nodejs-smtp-form.herokuapp.com/sendMessage', {
+                name: nameRef.current.value,
+                email: emailRef.current.value,
+                message: messageRef.current.value
+            })
+            nameRef.current.value = ''
+            emailRef.current.value = ''
+            messageRef.current.value = ''
+            alert('Your message has been sent to my email. I will contact you as soon as possible. Have a nice day!')
+        } else {
+            alert('Please, complete all data fields.')
+        }
     }
 
     return (
