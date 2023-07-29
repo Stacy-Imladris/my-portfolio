@@ -1,5 +1,5 @@
 import s from './Contacts.module.scss';
-import {Title} from '../../common/components/title/Title';
+import {Title} from 'common/components/title/Title';
 import {Fade} from 'react-awesome-reveal';
 import axios from 'axios';
 import {FormEvent, useRef} from 'react';
