@@ -1,10 +1,10 @@
 import s from './Footer.module.scss';
 import {Fade} from 'react-awesome-reveal';
-import {Title} from '../../common/components/title/Title';
-import linkedin from '../../assets/images/links/linkedin.png'
-import github from '../../assets/images/links/github.png'
-import codewars from '../../assets/images/links/codewars.png'
-import telegram from '../../assets/images/links/telegram.png'
+import {Title} from 'common/components/title/Title';
+import linkedin from 'assets/images/links/linkedin.png'
+import github from 'assets/images/links/github.png'
+import codewars from 'assets/images/links/codewars.png'
+import telegram from 'assets/images/links/telegram.png'
 
 export const Footer = () => (
     <div className={s.mainBlock}>
