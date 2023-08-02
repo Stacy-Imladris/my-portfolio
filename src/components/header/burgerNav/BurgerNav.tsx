@@ -1,6 +1,6 @@
 import s from './BurgerNav.module.scss';
 import {useState} from 'react';
-import {UniversalLink} from '../../../common/components/universalLink/UniversalLink';
+import {UniversalLink} from 'common/components/universalLink/UniversalLink';
 
 export const BurgerNav = () => {
     const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
