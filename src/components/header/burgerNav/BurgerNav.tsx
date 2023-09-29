@@ -5,9 +5,7 @@ import {UniversalLink} from 'common/components/universalLink/UniversalLink';
 export const BurgerNav = () => {
     const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 
-    const openMenu = () => {
-        setIsOpenMenu(!isOpenMenu)
-    }
+    const openMenu = () => setIsOpenMenu(!isOpenMenu)
 
     const hideMenu = () => {
         setIsOpenMenu(false)
