@@ -7,9 +7,7 @@ export const BurgerNav = () => {
 
     const openMenu = () => setIsOpenMenu(!isOpenMenu)
 
-    const hideMenu = () => {
-        setIsOpenMenu(false)
-    }
+    const hideMenu = () => setIsOpenMenu(false)
 
     const burgerNavItemsStyle = `${s.burgerNavItems} ${isOpenMenu ? s.isShow : ''}`
 
