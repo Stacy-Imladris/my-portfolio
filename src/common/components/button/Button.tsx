@@ -5,6 +5,4 @@ type Props = {
     url: string
 }
 
-export const Button = ({text, url}: Props) => (
-    <a href={url} className={s.btn} target='_blank'>{text}</a>
-)
+export const Button = ({text, url}: Props) => <a href={url} className={s.btn} target='_blank'>{text}</a>
