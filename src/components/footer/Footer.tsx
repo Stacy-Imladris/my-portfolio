@@ -13,19 +13,19 @@ export const Footer = () => (
                 <Title text={'Stacy Belikova'}/>
                 <div className={s.icons}>
                     <a href="https://www.linkedin.com/in/anastasiya-belikova-9687b8234/"
-                       className={s.icon} target='_blank'>
+                       className={s.icon} target='_blank' rel="noreferrer">
                         <img src={linkedin} className={s.img} alt={'linkedin'}/>
                     </a>
                     <a href="https://github.com/Stacy-Imladris"
-                       className={s.icon} target='_blank' >
+                       className={s.icon} target='_blank' rel="noreferrer">
                         <img src={github} className={s.img} alt={'github'}/>
                     </a>
                     <a href="https://www.codewars.com/users/Stacy-Imladris"
-                       className={s.icon} target='_blank'>
+                       className={s.icon} target='_blank' rel="noreferrer">
                         <img src={codewars} className={s.img} alt={'codewars'}/>
                     </a>
                     <a href="https://t.me/stacy_imladris"
-                       className={s.icon} target='_blank'>
+                       className={s.icon} target='_blank' rel="noreferrer">
                         <img src={telegram} className={s.img} alt={'telegram'}/>
                     </a>
                 </div>
