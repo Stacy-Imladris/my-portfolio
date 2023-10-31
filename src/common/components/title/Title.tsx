@@ -4,6 +4,4 @@ type Props = {
     text: string
 }
 
-export const Title = ({text}: Props) => (
-    <div className={s.title}><h2>{text}</h2></div>
-)
+export const Title = ({text}: Props) => <div className={s.title}><h2>{text}</h2></div>
