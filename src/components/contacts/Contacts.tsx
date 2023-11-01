@@ -5,9 +5,9 @@ import axios from 'axios';
 import {FormEvent, useRef} from 'react';
 
 export const Contacts = () => {
-    const nameRef = useRef<HTMLInputElement>(null);
-    const emailRef = useRef<HTMLInputElement>(null);
-    const messageRef = useRef<HTMLTextAreaElement>(null);
+    const nameRef = useRef<HTMLInputElement>(null)
+    const emailRef = useRef<HTMLInputElement>(null)
+    const messageRef = useRef<HTMLTextAreaElement>(null)
 
     const onSubmitSendMessage = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
