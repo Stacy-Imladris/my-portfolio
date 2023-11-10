@@ -1,8 +1,8 @@
-import s from './Main.module.scss';
-import {Fade} from 'react-awesome-reveal';
-import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-parallax-tilt';
-import {Parallax} from 'react-parallax';
+import s from './Main.module.scss'
+import {Fade} from 'react-awesome-reveal'
+import ReactTypingEffect from 'react-typing-effect'
+import Tilt from 'react-parallax-tilt'
+import {Parallax} from 'react-parallax'
 import background from 'assets/images/backgroung.jpg'
 
 export const Main = () => (
