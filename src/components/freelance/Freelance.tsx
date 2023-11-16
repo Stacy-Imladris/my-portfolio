@@ -1,7 +1,7 @@
-import s from './Freelance.module.scss';
-import {Fade} from 'react-awesome-reveal';
-import {Title} from 'common/components/title/Title';
-import {Link} from 'react-scroll';
+import s from './Freelance.module.scss'
+import {Fade} from 'react-awesome-reveal'
+import {Title} from 'common/components/title/Title'
+import {Link} from 'react-scroll'
 
 export const Freelance = () => (
     <div className={s.mainBlock}>
