@@ -1,5 +1,5 @@
-import s from './Nav.module.scss';
-import {UniversalLink} from 'common/components/universalLink/UniversalLink';
+import s from './Nav.module.scss'
+import {UniversalLink} from 'common/components/universalLink/UniversalLink'
 
 export const Nav = () => (
     <div className={s.nav}>
