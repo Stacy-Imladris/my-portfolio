@@ -1,6 +1,6 @@
-import s from './Project.module.scss';
-import {Fade} from 'react-awesome-reveal';
-import {Button} from 'common/components/button/Button';
+import s from './Project.module.scss'
+import {Fade} from 'react-awesome-reveal'
+import {Button} from 'common/components/button/Button'
 
 type Props = {
     title: string
