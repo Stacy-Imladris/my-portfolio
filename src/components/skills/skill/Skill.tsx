@@ -1,5 +1,5 @@
-import s from './Skill.module.scss';
-import {Fade} from 'react-awesome-reveal';
+import s from './Skill.module.scss'
+import {Fade} from 'react-awesome-reveal'
 
 type Props = {
     title: string
