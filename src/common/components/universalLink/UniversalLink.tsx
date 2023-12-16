@@ -9,8 +9,7 @@ type Props = {
 }
 
 export const UniversalLink = ({anchor, offset, text, onClick}: Props) => (
-    <Link activeClass={s.active} to={anchor} spy={true} smooth={true} offset={offset}
-          duration={300} onClick={onClick}>
+    <Link activeClass={s.active} to={anchor} spy smooth offset={offset} duration={300} onClick={onClick}>
         {text}
     </Link>
 )
