@@ -1,11 +1,11 @@
-import s from './Projects.module.scss';
-import {Project} from './project/Project';
-import {Title} from 'common/components/title/Title';
+import s from './Projects.module.scss'
+import {Project} from './project/Project'
+import {Title} from 'common/components/title/Title'
 import todolist from 'assets/images/projects/todolist.jpg'
 import socialNetwork from 'assets/images/projects/socialNetwork.jpg'
 import brainstorm from 'assets/images/projects/brainstorm.jpg'
 import movies from 'assets/images/projects/movies.jpg'
-import {Fade} from 'react-awesome-reveal';
+import {Fade} from 'react-awesome-reveal'
 
 export const Projects = () => (
     <div className={s.projectsBlock} id="projects">
