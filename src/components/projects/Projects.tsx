@@ -14,16 +14,16 @@ export const Projects = () => (
                 <Title text={'Projects'}/>
                 <div className={s.projects}>
                     <Project imgUrl={`url(${brainstorm})`} title={'Brainstorm'}
-                             projectUrl={'https://stacy-imladris.github.io/cards'}
+                             projectName={'cards'}
                              description={''}/>
                     <Project imgUrl={`url(${todolist})`} title={'Todolist'}
-                             projectUrl={'https://stacy-imladris.github.io/todolist'}
+                             projectName={'todolist'}
                              description={''}/>
                     <Project imgUrl={`url(${movies})`} title={'Movies Catalog'}
-                             projectUrl={'https://stacy-imladris.github.io/movies'}
+                             projectName={'movies'}
                              description={''}/>
                     <Project imgUrl={`url(${socialNetwork})`} title={'Social Network'}
-                             projectUrl={'https://github.com/Stacy-Imladris/it-react'}
+                             projectName={'it-react'}
                              description={''}/>
                 </div>
             </div>
