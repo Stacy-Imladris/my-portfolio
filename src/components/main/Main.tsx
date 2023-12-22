@@ -20,9 +20,7 @@ export const Main = () => (
                     </Fade>
                     <Fade direction={'right'}>
                         <Tilt>
-                            <div className={s.photo}>
-                                <div className={s.image}/>
-                            </div>
+                            <div className={s.photo}><div className={s.image}/></div>
                         </Tilt>
                     </Fade>
                 </div>
