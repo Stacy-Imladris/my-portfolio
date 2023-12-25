@@ -6,7 +6,8 @@ import {Parallax} from 'react-parallax'
 import background from 'assets/images/backgroung.jpg'
 
 export const Main = () => (
-    <Parallax bgImage={background} strength={550}
+    <Parallax bgImage={background}
+              strength={550}
               bgImageStyle={{width: '100vw', height: '100vh', objectFit: 'cover', opacity: .3}}>
         <div className={s.mainBlock} id={'main'}>
             <Fade className={s.fade} delay={150}>
