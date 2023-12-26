@@ -7,24 +7,26 @@ import brainstorm from 'assets/images/projects/brainstorm.jpg'
 import movies from 'assets/images/projects/movies.jpg'
 import {Fade} from 'react-awesome-reveal'
 
+const projects = [
+    {title: 'Brainstorm', githubName: 'cards', image: brainstorm},
+    {title: 'Todolist', githubName: 'todolist', image: todolist},
+    {title: 'Movies Catalog', githubName: 'movies', image: movies},
+    {title: 'Social Network', githubName: 'it-react', image: socialNetwork},
+]
+
 export const Projects = () => (
     <div className={s.projectsBlock} id="projects">
         <Fade delay={150}>
             <div className={s.projectsContainer}>
                 <Title text={'Projects'}/>
                 <div className={s.projects}>
-                    <Project imgUrl={`url(${brainstorm})`} title={'Brainstorm'}
-                             projectName={'cards'}
-                             description={''}/>
-                    <Project imgUrl={`url(${todolist})`} title={'Todolist'}
-                             projectName={'todolist'}
-                             description={''}/>
-                    <Project imgUrl={`url(${movies})`} title={'Movies Catalog'}
-                             projectName={'movies'}
-                             description={''}/>
-                    <Project imgUrl={`url(${socialNetwork})`} title={'Social Network'}
-                             projectName={'it-react'}
-                             description={''}/>
+                    {projects.map(({title, githubName, image}) => (
+                        <Project key={title}
+                                 imgUrl={`url(${image})`}
+                                 title={title}
+                                 projectName={githubName}
+                                 description={''}/>
+                    ))}
                 </div>
             </div>
         </Fade>
