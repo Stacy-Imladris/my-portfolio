@@ -14,21 +14,23 @@ const projects = [
     {title: 'Social Network', githubName: 'it-react', image: socialNetwork},
 ]
 
-export const Projects = () => (
-    <div className={s.projectsBlock} id="projects">
-        <Fade delay={150}>
-            <div className={s.projectsContainer}>
-                <Title text={'Projects'}/>
-                <div className={s.projects}>
-                    {projects.map(({title, githubName, image}) => (
-                        <Project key={title}
-                                 imgUrl={`url(${image})`}
-                                 title={title}
-                                 projectName={githubName}
-                                 description={''}/>
-                    ))}
+export const Projects = () => {
+    const projectsList = projects.map(({title, githubName, image}) => (
+        <Project key={title}
+                 imgUrl={`url(${image})`}
+                 title={title}
+                 projectName={githubName}
+                 description={''}/>
+    ))
+
+    return (
+        <div className={s.projectsBlock} id="projects">
+            <Fade delay={150}>
+                <div className={s.projectsContainer}>
+                    <Title text={'Projects'}/>
+                    <div className={s.projects}>{projectsList}</div>
                 </div>
-            </div>
-        </Fade>
-    </div>
-)
+            </Fade>
+        </div>
+    )
+}
