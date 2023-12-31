@@ -6,12 +6,4 @@ import {Main} from './main/Main'
 import {Projects} from './projects/Projects'
 import {Skills} from './skills/Skills'
 
-export {
-    Footer,
-    Contacts,
-    Freelance,
-    Header,
-    Main,
-    Projects,
-    Skills
-}
+export {Footer, Contacts, Freelance, Header, Main, Projects, Skills}
