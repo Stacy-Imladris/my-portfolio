@@ -1,7 +1,7 @@
 import s from './Nav.module.scss'
 import {UniversalLink} from 'common/components/universalLink/UniversalLink'
 
-const links = [
+export const links = [
     {anchor: 'main', offset: -70, text: 'Main'},
     {anchor: 'skills', offset: -50, text: 'Skills'},
     {anchor: 'projects', offset: -50, text: 'Projects'},
