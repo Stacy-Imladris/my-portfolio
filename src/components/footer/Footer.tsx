@@ -6,31 +6,29 @@ import github from 'assets/images/links/github.png'
 import codewars from 'assets/images/links/codewars.png'
 import telegram from 'assets/images/links/telegram.png'
 
-export const Footer = () => (
-    <div className={s.mainBlock}>
-        <Fade delay={150}>
-            <div className={s.footerContainer}>
-                <Title text={'Stacy Belikova'}/>
-                <div className={s.icons}>
-                    <a href="https://www.linkedin.com/in/anastasiya-belikova-9687b8234/"
-                       className={s.icon} target='_blank' rel="noreferrer">
-                        <img src={linkedin} className={s.img} alt={'linkedin'}/>
-                    </a>
-                    <a href="https://github.com/Stacy-Imladris"
-                       className={s.icon} target='_blank' rel="noreferrer">
-                        <img src={github} className={s.img} alt={'github'}/>
-                    </a>
-                    <a href="https://www.codewars.com/users/Stacy-Imladris"
-                       className={s.icon} target='_blank' rel="noreferrer">
-                        <img src={codewars} className={s.img} alt={'codewars'}/>
-                    </a>
-                    <a href="https://t.me/stacy_imladris"
-                       className={s.icon} target='_blank' rel="noreferrer">
-                        <img src={telegram} className={s.img} alt={'telegram'}/>
-                    </a>
+const links = [
+    {url: 'https://www.linkedin.com/in/anastasiya-belikova-9687b8234', image: linkedin, alt: 'linkedin'},
+    {url: 'https://github.com/Stacy-Imladris', image: github, alt: 'github'},
+    {url: 'https://www.codewars.com/users/Stacy-Imladris', image: codewars, alt: 'codewars'},
+    {url: 'https://t.me/stacy_imladris', image: telegram, alt: 'telegram'},
+]
+
+export const Footer = () => {
+    const linksList = links.map(({url, image, alt}) => (
+        <a href={url} className={s.icon} target='_blank' rel="noreferrer">
+            <img src={image} className={s.img} alt={alt}/>
+        </a>
+    ))
+
+    return (
+        <div className={s.mainBlock}>
+            <Fade delay={150}>
+                <div className={s.footerContainer}>
+                    <Title text={'Stacy Belikova'}/>
+                    <div className={s.icons}>{linksList}</div>
+                    <span className={s.copyright}>© 2022, All Rights Reserved.</span>
                 </div>
-                <span className={s.copyright}>© 2022, All Rights Reserved.</span>
-            </div>
-        </Fade>
-    </div>
-)
+            </Fade>
+        </div>
+    )
+}
