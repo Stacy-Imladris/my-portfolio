@@ -12,23 +12,31 @@ import html from 'assets/images/skills/html.svg'
 import css from 'assets/images/skills/css.svg'
 import sass from 'assets/images/skills/sass.svg'
 
-export const Skills = () => (
-    <div className={s.skillsBlock} id="skills">
-        <Fade delay={150}>
-            <div className={s.skillsContainer}>
-                <Title text="Skills"/>
-                <div className={s.skills}>
-                    <Skill title={'REACT'} imgUrl={`url(${react})`}/>
-                    <Skill title={'REDUX'} imgUrl={`url(${redux})`}/>
-                    <Skill title={'TYPESCRIPT'} imgUrl={`url(${js})`}/>
-                    <Skill title={'JAVASCRIPT'} imgUrl={`url(${ts})`}/>
-                    <Skill title={'REST API'} imgUrl={`url(${restAPI})`}/>
-                    <Skill title={'GIT'} imgUrl={`url(${git})`}/>
-                    <Skill title={'HTML'} imgUrl={`url(${html})`}/>
-                    <Skill title={'CSS'} imgUrl={`url(${css})`}/>
-                    <Skill title={'SASS/SCSS'} imgUrl={`url(${sass})`}/>
+const skills = [
+    {title: 'REACT', image: react},
+    {title: 'REDUX', image: redux},
+    {title: 'TYPESCRIPT', image: ts},
+    {title: 'JAVASCRIPT', image: js},
+    {title: 'REST API', image: restAPI},
+    {title: 'GIT', image: git},
+    {title: 'HTML', image: html},
+    {title: 'CSS', image: css},
+    {title: 'SASS/SCSS', image: sass},
+]
+
+export const Skills = () => {
+    const skillsList = skills.map(({title, image}) =>
+        <Skill key={title} title={title} imgUrl={`url(${image})`}/>
+    )
+
+    return (
+        <div className={s.skillsBlock} id="skills">
+            <Fade delay={150}>
+                <div className={s.skillsContainer}>
+                    <Title text="Skills"/>
+                    <div className={s.skills}>{skillsList}</div>
                 </div>
-            </div>
-        </Fade>
-    </div>
-)
+            </Fade>
+        </div>
+    )
+}
