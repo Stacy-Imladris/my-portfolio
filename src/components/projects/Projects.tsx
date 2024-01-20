@@ -5,7 +5,7 @@ import todolist from 'assets/images/projects/todolist.jpg'
 import socialNetwork from 'assets/images/projects/socialNetwork.jpg'
 import brainstorm from 'assets/images/projects/brainstorm.jpg'
 import movies from 'assets/images/projects/movies.jpg'
-import {Fade} from 'react-awesome-reveal'
+import {Container} from 'components/Container/Container';
 
 const projects = [
     {title: 'Brainstorm', githubName: 'cards', image: brainstorm},
@@ -24,13 +24,11 @@ export const Projects = () => {
     ))
 
     return (
-        <div className={s.projectsBlock} id="projects">
-            <Fade delay={150}>
-                <div className={s.projectsContainer}>
-                    <Title text={'Projects'}/>
-                    <div className={s.projects}>{projectsList}</div>
-                </div>
-            </Fade>
-        </div>
+        <Container blockClassName={s.projectsBlock}
+                   containerClassName={s.projectsContainer}
+                   id={'projects'}
+                   title={'Projects'}>
+            <div className={s.projects}>{projectsList}</div>
+        </Container>
     )
 }

@@ -1,8 +1,7 @@
 import s from './Contacts.module.scss'
-import {Title} from 'common/components/title/Title'
-import {Fade} from 'react-awesome-reveal'
 import axios from 'axios'
 import {FormEvent, useRef} from 'react'
+import {Container} from 'components/Container/Container';
 
 export const Contacts = () => {
     const nameRef = useRef<HTMLInputElement>(null)
@@ -29,18 +28,16 @@ export const Contacts = () => {
     }
 
     return (
-        <div className={s.mainBlock} id={'contacts'}>
-            <Fade delay={150}>
-                <div className={s.contactContainer}>
-                    <Title text={'Contact'}/>
-                    <form className={s.form} onSubmit={onSubmitSendMessage}>
-                        <input placeholder={'Name'} className={s.input} ref={nameRef}/>
-                        <input placeholder={'E-mail'} className={s.input} ref={emailRef}/>
-                        <textarea placeholder={'Your message'} className={s.area} ref={messageRef}/>
-                        <button type="submit">SEND MESSAGE</button>
-                    </form>
-                </div>
-            </Fade>
-        </div>
+        <Container blockClassName={s.mainBlock}
+                   containerClassName={s.contactContainer}
+                   id={'contacts'}
+                   title={'Contact'}>
+            <form className={s.form} onSubmit={onSubmitSendMessage}>
+                <input placeholder={'Name'} className={s.input} ref={nameRef}/>
+                <input placeholder={'E-mail'} className={s.input} ref={emailRef}/>
+                <textarea placeholder={'Your message'} className={s.area} ref={messageRef}/>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </Container>
     )
 }

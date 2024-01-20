@@ -11,6 +11,7 @@ import git from 'assets/images/skills/git.svg'
 import html from 'assets/images/skills/html.svg'
 import css from 'assets/images/skills/css.svg'
 import sass from 'assets/images/skills/sass.svg'
+import {Container} from 'components/Container/Container';
 
 const skills = [
     {title: 'REACT', image: react},
@@ -30,13 +31,11 @@ export const Skills = () => {
     )
 
     return (
-        <div className={s.skillsBlock} id="skills">
-            <Fade delay={150}>
-                <div className={s.skillsContainer}>
-                    <Title text="Skills"/>
-                    <div className={s.skills}>{skillsList}</div>
-                </div>
-            </Fade>
-        </div>
+        <Container blockClassName={s.skillsBlock}
+                   containerClassName={s.skillsContainer}
+                   id={'skills'}
+                   title={'Skills'}>
+            <div className={s.skills}>{skillsList}</div>
+        </Container>
     )
 }
