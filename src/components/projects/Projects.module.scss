@@ -14,7 +14,7 @@
       flex-wrap: wrap;
       margin-top: 30px;
       align-items: flex-start;
-      @media screen and (max-width: 1147px) {
+      @media (max-width: 1147px) {
         justify-content: center;
       }
     }

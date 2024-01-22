@@ -15,7 +15,7 @@
       flex-wrap: wrap;
       box-sizing: border-box;
       margin-top: 30px;
-      @media screen and (max-width: 771px) {
+      @media (max-width: 771px) {
         justify-content: center;
       }
     }
