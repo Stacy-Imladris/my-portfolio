@@ -16,7 +16,7 @@ export const Main = () => (
                         <div className={s.text}>
                             <span>Hi There</span>
                             <span>I am Anastasiya <span>Belikova</span></span>
-                            <ReactTypingEffect text="A Front-end Developer." speed={100}/>
+                            <ReactTypingEffect text="A Full-stack Developer." speed={100}/>
                         </div>
                     </Fade>
                     <Fade direction={'right'}>

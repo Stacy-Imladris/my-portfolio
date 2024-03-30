@@ -2,17 +2,17 @@ import s from './Skill.module.scss'
 import {Fade} from 'react-awesome-reveal'
 
 type Props = {
-    title: string
-    imgUrl: string
+  title: string
+  image: string
 }
 
-export const Skill = ({title, imgUrl}: Props) => (
+export const Skill = ({title, image}: Props) => (
     <div className={s.skill}>
-        <Fade>
-            <div className={s.icon}>
-                <div className={s.img} style={{backgroundImage: imgUrl}}/>
-            </div>
-            <h3 className={s.title}>{title}</h3>
-        </Fade>
+      <Fade>
+        <div className={s.icon}>
+          <img src={image} alt={`${title} icon`} className={s.img}/>
+        </div>
+        <h3 className={s.title}>{title}</h3>
+      </Fade>
     </div>
 )

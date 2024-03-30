@@ -7,6 +7,7 @@
   .projectsContainer {
     @include container();
     @include flex(column, flex-start, center, nowrap);
+
     .projects {
       width: 100%;
       display: flex;
