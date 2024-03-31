@@ -2,7 +2,7 @@
 @import "common/styles/sass/mixins";
 
 .project {
-  width: 450px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   background-color: $bgSecondColor;
@@ -10,7 +10,7 @@
   margin-bottom: 20px;
 
   .image {
-    height: 300px;
+    height: 370px;
     position: relative;
     @include bgSettings();
     @include flex(row, center, center, nowrap);
@@ -55,4 +55,12 @@
       font-weight: 400;
     }
   }
+}
+
+.notHovered {
+  display: inline-block;
+}
+
+.hovered {
+  display: none;
 }
