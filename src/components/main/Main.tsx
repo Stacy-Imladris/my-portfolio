@@ -3,7 +3,7 @@ import {Fade} from 'react-awesome-reveal'
 import ReactTypingEffect from 'react-typing-effect'
 import Tilt from 'react-parallax-tilt'
 import {Parallax} from 'react-parallax'
-import background from 'assets/images/backgroung.jpg'
+import background from 'assets/images/background.webp'
 
 export const Main = () => (
     <Parallax bgImage={background}
